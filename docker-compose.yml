@@ -1,1 +1,10 @@
-1
+version: '3'
+services:
+  mytomcat:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: mytomcat:v1
+    container_name: mytomcat
+    ports:
+      - 8082:8080
